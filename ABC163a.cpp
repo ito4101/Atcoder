@@ -6,4 +6,9 @@ using ll = long long;
 
 
 int main(){
+    int R;
+    double cir;
+    cin >> R;
+    cir = 2*R*3.14;
+    printf("%.2f\n", cir);
 }

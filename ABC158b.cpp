@@ -1,8 +1,12 @@
 #include<bits/stdc++.h>
 using namespace std;
+using ll = long long;
+#define rep(i, n) for (int i = 0; i < (int)(n); i++)
+#define all(v) v.begin(), v.end()
+
 
 int main(){
-    int N, b, r, cnt, i, k;
+    ll N, b, r, cnt, i, k;
     cin >> N >> b >> r;
     cnt = 0;
     i = 0;
@@ -13,7 +17,7 @@ int main(){
 
     k = 0;
     while(k < N % (r + b)){
-            for(int j = 0; j < b; j++){
+            for(ll j = 0; j < b; j++){
                 if(k < N % (r + b)){
                     cnt++;
                     k++;
